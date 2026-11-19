@@ -1,0 +1,13 @@
+SERVIDOR (danieltellez.net)
+  Sube index.html, tecnologias/ y cafe/ a la carpeta /ED1/ del servidor.
+  Cada sitio ya trae su php/registro.php.
+
+ANDROID STUDIO
+  1. Proyecto nuevo: Empty Views Activity (Kotlin), paquete com.example.ed1
+  2. Crea la carpeta assets (clic derecho en app > New > Folder > Assets Folder)
+  3. Copia dentro de assets: index.html, tecnologias/ y cafe/  (no hace falta copiar los php/)
+  4. Reemplaza MainActivity.kt por android/MainActivity.kt
+  5. En AndroidManifest.xml, antes de <application>:
+        <uses-permission android:name="android.permission.INTERNET"/>
+  El formulario envía a https://danieltellez.net/ED1/.../php/registro.php,
+  por eso el PHP debe estar subido al servidor para que funcione desde la app.
